@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+        <script src="{{url_for('static', filename='script.js')}}" defer></script>
+        <title>Reviews Classifier</title>
+    </head>
+
+    <body>
+        <div class="container">
+            <h1 class="title">Review Classifier</h1>
+            <div class="review">
+                <textarea name="review" id="review_text" cols="30" rows="10"></textarea>
+                <div class="length">
+                    <span id="length">0/250</span>
+                </div>
+            </div>
+            <input type="button" value="Check" id="check">
+        </div> 
+        <div class="result">
+            <div id="result">N/A</div>
+        </div>
+    </body>
+</html>
